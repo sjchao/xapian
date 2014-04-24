@@ -5,3 +5,6 @@
 /config.cache
 /BUILD
 /INST
+
+.project
+.cproject
