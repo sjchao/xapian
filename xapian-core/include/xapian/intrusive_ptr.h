@@ -44,6 +44,9 @@ namespace Xapian {
 namespace Internal {
 
 /// Base class for objects managed by intrusive_ptr.
+/*
+ * 使用 intrusive_ptr 的类都必须继承此类
+ */
 class intrusive_base {
     /// Prevent copying.
     intrusive_base(const intrusive_base&);

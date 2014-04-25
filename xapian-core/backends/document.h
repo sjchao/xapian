@@ -37,6 +37,9 @@ using namespace std;
 class DocumentValueList;
 class ValueStreamDocument;
 
+/*
+ * document 的内部实体类，实现在 api/omdocument.cc 中
+ */
 /// A document in the database, possibly plus modifications.
 class Xapian::Document::Internal : public Xapian::Internal::intrusive_base {
     friend class ::DocumentValueList;

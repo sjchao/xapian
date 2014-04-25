@@ -58,6 +58,11 @@ namespace Xapian {
  *
  *      doc = Xapian::Document::unserialise(doc.serialise());
  */
+/*
+ * 该类的实现在 api/omdocument.cc 中
+ * PIMPL(private implementation)
+ * 真正的实现类是 Document::Internal，定义在 backends/document.h 中，实现在 api/omdocument.cc 中
+ */
 class XAPIAN_VISIBILITY_DEFAULT Document {
     public:
 	class Internal;
