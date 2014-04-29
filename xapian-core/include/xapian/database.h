@@ -42,6 +42,11 @@
 #include <xapian/valueiterator.h>
 #include <xapian/visibility.h>
 
+/*
+ * Database 和 WritableDatabase 的类定义，类的实现在 api/omdatabase.cc
+ * 还是使用PImpl，定义的外部接口分为 Database 和 WritableDatabase
+ * 对应的实现类只有一个 Database::Internal，在 backends/database.h(cc)
+ */
 namespace Xapian {
 
 class Document;

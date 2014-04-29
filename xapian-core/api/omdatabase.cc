@@ -81,6 +81,9 @@ sub_docid(Xapian::docid did, size_t n_dbs)
     return (did - 1) / n_dbs + 1;
 }
 
+/*
+ * Database 和 WritableDatabase 的 wrapper 实现
+ */
 namespace Xapian {
 
 Database::Database()

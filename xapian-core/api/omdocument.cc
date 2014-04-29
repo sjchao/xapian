@@ -218,6 +218,9 @@ Document::unserialise(const std::string &s)
 
 /////////////////////////////////////////////////////////////////////////////
 
+/*
+ * position保持增序
+ */
 void
 OmDocumentTerm::add_position(Xapian::termpos tpos)
 {
@@ -266,6 +269,8 @@ OmDocumentTerm::get_description() const
     description += "])";
     return description;
 }
+
+/////////////////////////////////////////////////////////////////////////////
 
 string
 Xapian::Document::Internal::get_value(Xapian::valueno slot) const
